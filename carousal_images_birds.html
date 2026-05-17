@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap Carousel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-color: #f2f2f2;
+    }
+
+    /* Small carousel container */
+    #carouselExample {
+      width: 500px;
+      height: 300px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    /* Proper image fitting */
+    #carouselExample img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background-color: rgb(136, 116, 116);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Carousel Start -->
+  <div id="carouselExample" class="carousel slide">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="1.png" alt="Bird Image">
+      </div>
+
+      <div class="carousel-item">
+        <img src="2.png" alt="Bird Image">
+      </div>
+
+      <div class="carousel-item">
+        <img src="3.png" alt="Bird Image">
+      </div>
+
+    </div>
+
+    <!-- Previous Button -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <!-- Next Button -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+      <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+  </div>
+  <!-- Carousel End -->
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
